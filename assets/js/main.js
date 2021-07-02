@@ -81,6 +81,10 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    const newColorScheme = e.matches ? "dark" : "light";
+});
+
 /* REDUCE THE SIZE AND PRINT ON AN A4 SHEET */ 
 function scaleCv(){
     document.body.classList.add('scale-cv')
