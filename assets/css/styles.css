@@ -622,10 +622,6 @@ img {
     gap: 1.5rem;
   }
 
-  .home_button-movil{
-    display: none;
-  }
-
   .references_container{
     grid-template-columns: repeat(2, 1fr);
   }
