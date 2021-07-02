@@ -65,7 +65,7 @@ const getCurrentTheme = () => window.matchMedia('(prefers-color-scheme: dark)').
     const newColorScheme = e.matches ? "dark" : "light";
 });
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 /* We validate if the user previously chose a topic */
