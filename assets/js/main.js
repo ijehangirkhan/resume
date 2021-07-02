@@ -61,11 +61,11 @@ const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
 /* We obtain the current theme that the interface has by validating the dark-theme class */
-const getCurrentTheme = () => window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    const newColorScheme = e.matches ? "dark" : "light";
-});
+// const getCurrentTheme = () => window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+//     const newColorScheme = e.matches ? "dark" : "light";
+// });
 
-// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
 
 /* We validate if the user previously chose a topic */
