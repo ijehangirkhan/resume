@@ -60,7 +60,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e =
     const systemColorScheme = e.matches ? "dark" : "light";
 });
 
-document.body.classList[systemColorScheme === 'dark' ? 'add' : 'remove'](darkTheme)
+document.body.classList[systemColorScheme === 'dark' ? 'remove' : 'add'](darkTheme)
 
 /* Previously selected topic (if user selected) */
 const selectedTheme = localStorage.getItem('selected-theme')
