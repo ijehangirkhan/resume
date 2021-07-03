@@ -55,9 +55,10 @@ window.addEventListener('scroll', scrollTop)
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
 const iconTheme = 'bx-sun'
+const systemColorScheme = "light"
 
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-    const systemColorScheme = e.matches ? "dark" : "light";
+    systemColorScheme = e.matches ? "dark" : "light";
 });
 
 document.body.classList[systemColorScheme === 'dark' ? 'remove' : 'add'](darkTheme)
