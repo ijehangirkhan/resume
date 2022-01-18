@@ -511,11 +511,6 @@ img {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
 }
-.certificate-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: 1fr 1fr;
-}
 
 /* REFERENCES */
 .references_content{
