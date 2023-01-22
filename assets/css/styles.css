@@ -461,6 +461,15 @@ img {
   transform: translate(7px, 0);
 }
 
+.experience_link{
+  color: var(--title-color);
+  font-weight: var(--small-font-size);
+}
+
+.experience_link:hover{
+  color: var(--text-color);
+}
+
 .education_data,
 .experience_data{
   gap: .5rem;
@@ -510,6 +519,19 @@ img {
 .certificate_title{
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
+}
+.certificate_content{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-3);
+}
+
+.certificate_link{
+  color: var(--title-color);
+  font-weight: var(--font-medium);
+}
+
+.certificate_link:hover{
+  color: var(--text-color);
 }
 
 /* REFERENCES */
